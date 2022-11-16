@@ -148,6 +148,7 @@ function auditUser(){
                     sep
                 elif [[ $yn == "n" ]]; then
                     sep
+		    groupadd $groupname
                     auditUser
                 fi
             ;;
