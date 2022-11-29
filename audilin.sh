@@ -107,7 +107,7 @@ function auditUser(){
             read -p 'Make/delete group, add/remove User to existing group, or Admin/Sudo audit: (mg , rg, asg, rsg, as) [exit] : ' egmg
             case $egmg in
             asg)
-                user
+	        users
                 read -p 'Which Users group status are you going to want to change: ' chuser
                 read -p "What group are you going to want add $chuser to? " groupname
                 usermod $chuser -aG $groupname
