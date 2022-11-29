@@ -34,7 +34,7 @@ function auditUser(){
                 user
                 sep
                 read -p "Who is the new cutie for the server ;): " newu
-                adduser $newu
+                adduser $newu --allow-badname
                 echo "Cutie User $newu has been added ;)"
                 #loop
                 sep
