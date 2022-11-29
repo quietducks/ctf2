@@ -271,4 +271,7 @@ function menu(){
     ;;
     esac
 }
-while true; do menu; done
+while true; do 
+clear
+menu
+; done
